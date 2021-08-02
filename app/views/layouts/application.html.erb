@@ -22,14 +22,16 @@
         </nav>
       </div>
     </header>
-    <%= yield %>
-    <footer class="footer">
-    <nav>
-      <ul>
-        <li><%= link_to "About",   about_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
-      </ul>
-    </nav>
-  </footer>
+    <div class="container">
+      <%= yield %>
+      <footer class="footer">
+        <nav>
+          <ul>
+            <li><%= link_to "About",   about_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>
